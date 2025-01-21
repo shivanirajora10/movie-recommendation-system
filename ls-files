@@ -1,0 +1,59 @@
+[33mcommit 4593d4416ee1c64313a1e342208b516bcbb0ea8e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: shivanirajora10 <shivanirajora37810@gmail.com>
+Date:   Tue Jan 21 19:28:55 2025 +0530
+
+    added changes
+
+[33mcommit 8a7a1b81a292d57332c80b37ebcd2605fbe9cfcb[m
+Author: shivanirajora10 <shivanirajora37810@gmail.com>
+Date:   Tue Jan 21 18:44:43 2025 +0530
+
+    Added gdown to download similarity.pkl from Google Drive
+
+[33mcommit d7140f83c8e2bd46f4731eb3c280add264975042[m
+Author: shivanirajora10 <shivanirajora37810@gmail.com>
+Date:   Tue Jan 21 18:27:03 2025 +0530
+
+    Add functionality to download similarity.pkl
+
+[33mcommit 114916a92636d02511ca043a8fef3cd6e3adc511[m
+Author: shivanirajora10 <shivanirajora37810@gmail.com>
+Date:   Tue Jan 21 17:28:12 2025 +0530
+
+    Add similarity.pkl to .gitignore
+
+[33mcommit 59e1cf953cb34637f19e15342528d89d472a7650[m
+Author: shivanirajora10 <shivanirajora37810@gmail.com>
+Date:   Tue Jan 21 17:07:50 2025 +0530
+
+    Compressed similarity.pkl to similarity.pkl.zip
+
+[33mcommit 7864b8c4e48bcbea8f6912482db22184264751fe[m
+Author: shivanirajora10 <shivanirajora37810@gmail.com>
+Date:   Tue Jan 21 16:53:20 2025 +0530
+
+    Re-add .pkl files and .gitattributes with Git LFS tracking
+
+[33mcommit 4db944db50477f6c6e116ada80308dff2ba667a7[m
+Author: shivanirajora10 <shivanirajora37810@gmail.com>
+Date:   Tue Jan 21 14:44:34 2025 +0530
+
+    Fixed large file issue and cleaned up repo
+
+[33mcommit 589398d55f88e96549d7fdc757d256b6c066ac99[m
+Author: shivanirajora10 <shivanirajora37810@gmail.com>
+Date:   Tue Jan 21 14:12:36 2025 +0530
+
+    Initial commit
+
+[33mcommit 0c156125309b7adfd60b3767080ca48fda144865[m
+Author: shivanirajora10 <shivanirajora37810@gmail.com>
+Date:   Tue Jan 21 14:04:01 2025 +0530
+
+    Removed .idea files from tracking
+
+[33mcommit 199986b86080053b4ee068a950ab5c3794a8e298[m
+Author: shivanirajora10 <shivanirajora37810@gmail.com>
+Date:   Tue Jan 21 13:58:53 2025 +0530
+
+    Normalize line endings
