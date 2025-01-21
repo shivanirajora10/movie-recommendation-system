@@ -4,6 +4,7 @@ import pandas as pd
 import requests
 import os
 import urllib.request
+import gdown
 
 # Function to fetch movie poster from OMDb API
 def fetch_poster(movie_title):
