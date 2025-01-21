@@ -3,7 +3,6 @@ import pickle
 import pandas as pd
 import requests
 import os
-import urllib.request
 import gdown
 
 # Function to fetch movie poster from OMDb API
@@ -12,7 +11,7 @@ def fetch_poster(movie_title):
     url = f"http://www.omdbapi.com/?t={movie_title}&apikey={api_key}"
     response = requests.get(url)
     data = response.json()
-    if data['Response'] == 'True' and 'Poster' in data:
+    if data.get('Response') == 'True' and 'Poster' in data:
         return data['Poster']
     else:
         return "https://via.placeholder.com/300x450?text=No+Poster+Found"
@@ -41,7 +40,7 @@ movies = pd.DataFrame(movies_dict)
 file_path = 'similarity.pkl'
 if not os.path.exists(file_path):
     url = "https://drive.google.com/uc?id=1_XWfuxX8g4NtT0OpU0bieU7CDpHbWkp5&export=download"
-    urllib.request.urlretrieve(url, file_path)
+    gdown.download(url, file_path, quiet=False)  # Using gdown to download directly
 
 similarity = pickle.load(open(file_path, 'rb'))
 
@@ -54,6 +53,7 @@ selected_movie_name = st.selectbox('Select a movie', movies['title'].values, key
 if st.button('Recommend'):
     recommendations, posters = recommend(selected_movie_name)
 
+    # Create 5 columns for the recommendations
     col1, col2, col3, col4, col5 = st.columns(5)
     with col1:
         st.image(posters[0])
@@ -74,10 +74,3 @@ if st.button('Recommend'):
     with col5:
         st.image(posters[4])
         st.text(recommendations[4])
-
-    # Create 5 columns for the recommendations
-    #cols = st.columns(5)
-    # for col, movie, poster in zip(cols, recommendations, posters):
-    #     with col:
-    #         st.image(poster, use_container_width=True)  # Display the poster
-    #         st.write(movie)  # Display the movie title
